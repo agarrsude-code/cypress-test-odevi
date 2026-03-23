@@ -11,8 +11,8 @@ jobs:
       - name: Her Seyi Kur
         run: npm install
 
-      - name: Tum Testleri Bul ve Calistir
+      - name: Testleri Baslat
         uses: cypress-io/github-action@v6
         with:
           install: false
-          # Bu sefer dosya yolu belirtmiyoruz, GitHub kendisi bulacak!
+          config: supportFile=false
