@@ -8,10 +8,6 @@ jobs:
       - name: Kodlari Getir
         uses: actions/checkout@v4
 
-      - name: Bagimliliklari Kur
-        run: npm install
-
-      - name: Cypress Testlerini Calistir
+      - name: Cypress Kur ve Calistir
+        # Bu komut her şeyi sıfırdan kurar
         uses: cypress-io/github-action@v6
-        with:
-          install: false
