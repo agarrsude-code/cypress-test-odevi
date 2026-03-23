@@ -1,10 +1,11 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  allowCypressEnv: false,
+
   e2e: {
-    setupNodeEvents(on, config) {},
-    // Bu satır her yerdeki .cy.js dosyalarını bulur:
-    specPattern: "**/*.cy.js",
-    supportFile: false
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
+    },
   },
 });
