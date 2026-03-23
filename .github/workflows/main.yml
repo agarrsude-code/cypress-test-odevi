@@ -8,10 +8,12 @@ jobs:
       - name: Kodlari Getir
         uses: actions/checkout@v4
 
-      - name: Her Seyi Sifirdan Kur
+      - name: Her Seyi Kur
         run: npm install
 
-      - name: Cypress Testlerini Baslat
+      - name: Cypress Testlerini Zorla Baslat
         uses: cypress-io/github-action@v6
         with:
           install: false
+          # Senin test dosyalarının olduğu yeri tam buraya yazdık:
+          spec: cypress/e2e/2-advanced-examples/*.cy.js
