@@ -8,11 +8,5 @@ jobs:
       - name: Kodlari Getir
         uses: actions/checkout@v4
 
-      - name: Her Seyi Kur
-        run: npm install
-
-      - name: Testleri Baslat
+      - name: Cypress Calistir
         uses: cypress-io/github-action@v6
-        with:
-          install: false
-          config: supportFile=false
