@@ -5,13 +5,13 @@ jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Kodlari Getir
         uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: npm install --no-package-lock # Lock dosyası yoksa zorla kur dedik
+      - name: Bagimliliklari Kur
+        run: npm install
 
-      - name: Cypress run
+      - name: Cypress Testlerini Calistir
         uses: cypress-io/github-action@v6
         with:
-          install: false # Kurulumu biz üstte yaptık, sen sadece çalıştır dedik
+          install: false
