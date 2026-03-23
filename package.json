@@ -1,7 +1,8 @@
 {
-  "name": "cypress-test",
-  "version": "1.0.0",
-  "devDependencies": {
-    "cypress": "latest"
-  }
+  "name": "rxjs/webSocket",
+  "types": "../dist/types/webSocket/index.d.ts",
+  "main": "../dist/cjs/webSocket/index.js",
+  "module": "../dist/esm5/webSocket/index.js",
+  "es2015": "../dist/esm/webSocket/index.js",
+  "sideEffects": false
 }
