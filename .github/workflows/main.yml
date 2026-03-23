@@ -1,6 +1,5 @@
 name: Cypress Tests
 on: [push]
-
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
@@ -11,6 +10,5 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-          # Önce her şeyi kur, sonra testleri koştur
-          install-command: npm install
-          command: npx cypress run --browser chrome
+          # Bu satırı ekledik çünkü sende lock dosyası eksik
+          runTests: true
